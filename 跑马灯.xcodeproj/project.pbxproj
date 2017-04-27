@@ -15,6 +15,7 @@
 		A97C60E41E690886003921C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97C60E21E690886003921C4 /* LaunchScreen.storyboard */; };
 		A97C60EF1E690886003921C4 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A97C60EE1E690886003921C4 /* ___Tests.m */; };
 		A97C60FA1E690886003921C4 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A97C60F91E690886003921C4 /* ___UITests.m */; };
+		A97C61091E69089E003921C4 /* RollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97C61081E69089E003921C4 /* RollTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A97C60F51E690886003921C4 /* 跑马灯UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "跑马灯UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97C60F91E690886003921C4 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		A97C60FB1E690886003921C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97C61071E69089E003921C4 /* RollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollTextView.h; sourceTree = "<group>"; };
+		A97C61081E69089E003921C4 /* RollTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		A97C60D31E690886003921C4 /* 跑马灯 */ = {
 			isa = PBXGroup;
 			children = (
+				A97C61071E69089E003921C4 /* RollTextView.h */,
+				A97C61081E69089E003921C4 /* RollTextView.m */,
 				A97C60D71E690886003921C4 /* AppDelegate.h */,
 				A97C60D81E690886003921C4 /* AppDelegate.m */,
 				A97C60DA1E690886003921C4 /* ViewController.h */,
@@ -207,7 +212,7 @@
 				TargetAttributes = {
 					A97C60D01E690886003921C4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					A97C60E91E690886003921C4 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -275,6 +280,7 @@
 			files = (
 				A97C60DC1E690886003921C4 /* ViewController.m in Sources */,
 				A97C60D91E690886003921C4 /* AppDelegate.m in Sources */,
+				A97C61091E69089E003921C4 /* RollTextView.m in Sources */,
 				A97C60D61E690886003921C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "跑马灯/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pdkj.---";
@@ -433,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "跑马灯/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pdkj.---";

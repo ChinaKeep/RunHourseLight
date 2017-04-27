@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "RollTextView.h"
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @interface ViewController ()
 
@@ -16,13 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//    UISplitViewController
+    NSString *rollStr = [NSString stringWithFormat:@"%@%@",@"南京品德信息技术有限公司",@""];
+    
+    //跑马灯
+    RollTextView  *rolltextView = [[RollTextView alloc] initWithFrame:CGRectMake(30, 28, 140, 30) texts:@[rollStr] attributes:@[@{NSFontAttributeName:[UIFont systemFontOfSize:16.0], NSForegroundColorAttributeName:[UIColor redColor]}]];
+    
+    [self.view addSubview:rolltextView];
 }
 
 
